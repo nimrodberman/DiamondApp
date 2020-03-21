@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Diamond Information</div>
+  <div class="panel-body">
+
+      <br>
+    <small class="text muted">Shape: {{diamond.shape}}</small>
+    <br>
+    <small class="text muted">Size: {{diamond.size}}</small>
+    <br>
+    <small class="text muted">Color: {{diamond.color}}</small>
+    <br>
+    <small class="text muted">Clarity: {{diamond.clarity}}</small>
+    <br>
+    <small class="text muted">Cut: {{diamond.cut}}</small>
+    <br>
+    <small class="text muted">Florecent: {{diamond.florecent}}</small>
+    <br>
+
+    <median class="text muted-lg">Price: {{diamond.price}}</median>
+    <br><br><br>
+
+    <a href="/Search">
+    <button class="btn btn-outline-info">Search Again</button>
+    </a>
+  </div>
+</div>
+
+
+
+
+{% endblock %}
